@@ -63,10 +63,10 @@ if __name__ == "__main__":
     # FrozenLake Environment 생성
     env = gym.make('FrozenLake-v1', is_slippery=False,  render_mode="rgb_array")
 
-    # Value-Iteration Agent 객체 생성
+    # Policy Iteration Agent 객체 생성
     agent = Agent(env)
 
-    # Value Iteration 수행
+    # Policy Iteration 수행
     agent.policy_iteration()
 
     # Optimal Policy 구하기
