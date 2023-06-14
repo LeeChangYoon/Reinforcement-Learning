@@ -18,7 +18,7 @@ if __name__ == "__main__":
     # FrozenLake Environment 생성
     env = gym.make('FrozenLake-v1', is_slippery=False, render_mode="human")
 
-    # Value Iteration Agent 객체 생성
+    # Policy Iteration Agent 객체 생성
     agent = Agent(env)
     print(agent.policy_table)
 
